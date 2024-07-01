@@ -105,16 +105,19 @@
         <div class="seconddivincontainer">
           <div id="digitsdivs">
             <div class="digitsdiv">
-              <p><span>$89,914</span> <br />of $100,000 backed</p>
+              <p>
+                <span id="digitsdivspan1">$89,914</span> <br />of $100,000
+                backed
+              </p>
             </div>
             <div class="digitsdiv">
-              <p><span>5,007</span> <br />total backers</p>
+              <p><span id="digitsdivspan2">5,007</span> <br />total backers</p>
             </div>
             <div class="digitsdiv">
               <p><span>56</span> <br />days left</p>
             </div>
           </div>
-          <hr />
+          <progress value="89914" max="100000"></progress>
         </div>
         <div class="thirddivincontainer">
           <div class="aboutthisproject">
@@ -144,9 +147,9 @@
             </p>
             <div class="onehundredandone">
               <p>
-                <span class="onehundredandonespan numberspan">101</span> left
+                <span class="onehundredandonespan numberspan1">101</span> left
               </p>
-              <button id="selectreward">Select Reward</button>
+              <button id="selectbambooreward">Select Reward</button>
             </div>
           </div>
           <div class="pledge75">
@@ -160,8 +163,8 @@
               included.
             </p>
             <div class="sixtyfour">
-              <p><span class="sixtyfourspan numberspan">64 </span>left</p>
-              <button id="selectreward">Select Reward</button>
+              <p><span class="sixtyfourspan numberspan2">64 </span>left</p>
+              <button id="selectblackedreward">Select Reward</button>
             </div>
           </div>
           <div class="pledge200">
@@ -219,9 +222,13 @@
             </p>
             <hr id="firsthr" class="hr1" />
             <div class="enterpledge0 fillpledge">
-              <p>Enter your pledge</p>
+              <input
+                id="enternorewardpledge"
+                type="text"
+                placeholder="Enter your pledge"
+              />
               <div class="enterpledge0buttons">
-                <button>$0</button>
+                <button id="zero$button">$0</button>
                 <button class="continuebtn">Continue</button>
               </div>
             </div>
@@ -255,10 +262,14 @@
           </p>
           <hr id="secondhr" class="hr2" />
           <div class="enterpledge25 fillpledge">
-            <p>Enter your pledge</p>
+            <input
+              id="enterbamboopledge"
+              type="text"
+              placeholder="Enter your pledge"
+            />
             <div class="enterpledge25buttons">
-              <button>$25</button>
-              <button class="continuebtn">Continue</button>
+              <button id="twentyfive$btn">$25</button>
+              <button class="continuebtn continuebtn25">Continue</button>
             </div>
           </div>
         </div>
@@ -291,9 +302,13 @@
           </p>
           <hr id="thirdhr" class="hr3" />
           <div class="enterpledge75 fillpledge">
-            <p>Enter your pledge</p>
+            <input
+              id="enterblackpledge"
+              type="text"
+              placeholder="Enter your pledge"
+            />
             <div class="enterpledge75buttons">
-              <button>$75</button>
+              <button id="seventyfive$btn">$75</button>
               <button class="continuebtn">Continue</button>
             </div>
           </div>
@@ -324,9 +339,13 @@
           </p>
           <hr id="fourthhr" class="hr4" />
           <div class="enterpledge200 fillpledge">
-            <p>Enter your pledge</p>
+            <input
+              id="entermahoganypledge"
+              type="text"
+              placeholder="Enter your pledge"
+            />
             <div class="enterpledge200buttons">
-              <button>$200</button>
+              <button id="twohundred$btn">$200</button>
               <button class="continuebtn">Continue</button>
             </div>
           </div>
